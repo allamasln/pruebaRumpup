@@ -11,13 +11,24 @@
         
         // EJERCICIO 3 
         // PARA TODOS
-        console.log("EJERCICIO 3")
+        // console.log("EJERCICIO 3")
 
-        console.log("solicita una frase al usuario e imprime el número de palabras que tiene");
-        const frase = prompt("Asumimos que todas las palabras estan separadas por un espacio");
+        // console.log("solicita una frase al usuario e imprime el número de palabras que tiene");
+        // const frase = prompt("Asumimos que todas las palabras estan separadas por un espacio");
 
 
         // AQUÍ TU RESPUESTA. HAPPY CODING!!
+
+        let texto = prompt("Escribe un texto");
+        let textoDividido = texto.split(" ");
+        let numeroPalabras = textoDividido.length;
+
+        if(numeroPalabras === 1){
+            console.log("Un texto tiene mas de una palabra");
+        } else if(numeroPalabras > 1){
+            console.log("El texto tiene " + numeroPalabras + " palabras");
+        }
+
 
     </script>
 </body>
