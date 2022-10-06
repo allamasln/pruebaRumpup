@@ -16,18 +16,34 @@
 
         // EJERCICIO 2.1 
 
-        console.log("EJERCICIO 2.1:");
+        /*console.log("EJERCICIO 2.1:");
         console.log("Pide al usuario dos números e indica por console.log:")
         console.log("Si son pares y multiplos de 25 ambos")
         console.log("Si uno de ellos es par y multiplo de 25")
-        console.log("O Si ninguno son pares ni múltiplos de 25")
+        console.log("O Si ninguno son pares ni múltiplos de 25")*/
 
         // EJERCICIOS 2.2
 
         console.log("EJERCICIO 2.2:")
-        console.log("Pidie al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")
+        /*console.log("Pide al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")*/
 
         // AQUÍ TU RESPUESTA. HAPPY CODING!!
+
+        let palabra = prompt("Ingresa cualquier palabra...");
+        
+        
+        let primerCaracter = palabra.charAt(0);
+        let ultimoCaracter = palabra.charAt(palabra.length - 1);
+
+        if(primerCaracter == "a" && ultimoCaracter == "a"){
+          console.log(palabra + ": Ambas terminan en A");
+        } else if(primerCaracter == "a"){
+          console.log(palabra + ": Palabra empieza por A");
+        } else if(ultimoCaracter == "a"){
+        console.log(palabra + ": Palabra termina en A");
+        } else {
+        console.log(palabra + ": Ni lo uno ni lo otro");
+        }
 
   </script>  
 </body>
