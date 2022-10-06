@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EJERCICIO2</title>
-</head>
-<body>
-  <script>
-    
-        // EJERCICIO 2
-        // ELIJE UNO DE LOS DOS
+  </head>
+  <body>
+    <script>
 
-        // IMPORTANTE: TEN EN CUENTA QUE LA ENTRADA DEL USUARIO POR PROMPT SE RECIBE SIEMPRE COMO UN DATO DE TIPO STRING Y SABEMOS QUE NO SE PUEDEN RESOLVER OPERACIONES MATEMÁTICAS ENTRE CADENAS DE TEXTO.
+      // EJERCICIO 2
+      // ELIJE UNO DE LOS DOS
 
-        // EJERCICIO 2.1 
+      // IMPORTANTE: TEN EN CUENTA QUE LA ENTRADA DEL USUARIO POR PROMPT SE RECIBE SIEMPRE COMO UN DATO DE TIPO STRING Y SABEMOS QUE NO SE PUEDEN RESOLVER OPERACIONES MATEMÁTICAS ENTRE CADENAS DE TEXTO.
 
-        console.log("EJERCICIO 2.1:");
-        console.log("Pide al usuario dos números e indica por console.log:")
-        console.log("Si son pares y multiplos de 25 ambos")
-        console.log("Si uno de ellos es par y multiplo de 25")
-        console.log("O Si ninguno son pares ni múltiplos de 25")
+      // EJERCICIO 2.1
+      console.log("EJERCICIO 2.1:");
+      console.log("Pide al usuario dos números e indica por console.log:")
+      console.log("Si son pares y multiplos de 25 ambos")
+      console.log("Si uno de ellos es par y multiplo de 25")
+      console.log("O Si ninguno son pares ni múltiplos de 25")
 
-        // EJERCICIOS 2.2
+      // EJERCICIOS 2.2
+      console.log("EJERCICIO 2.2:")
+      console.log("Pidie al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")
 
-        console.log("EJERCICIO 2.2:")
-        console.log("Pidie al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")
+      // AQUÍ TU RESPUESTA. HAPPY CODING!!
 
-        // AQUÍ TU RESPUESTA. HAPPY CODING!!
+      // Ejercicio 2.1
+      let n1 = prompt("Escribe un número:");
+      let n2 = prompt("Escribe otro número:");
 
-  </script>  
-</body>
+      if (((n1 % 2 == 0) && (n1 % 25 == 0)) && ((n2 % 2 == 0) && (n2 % 25 == 0))) { // n1 y n2 pares y mult de 25
+        console.log("Ambos números son pares y múltiplos de 25.");
+      } else if (((n1 % 2 == 0) && (n1 % 25 == 0)) || ((n2 % 2 == 0) && (n2 % 25 == 0))) {
+        console.log("Uno de los dos números es par y múltiplo de 25.");
+      } else if (((n1 % 2 == 1) && (n1 % 25 != 0)) && ((n2 % 2 == 1) && (n2 % 25 != 0))) {
+        console.log("Ninguno de los dos números es par ni múltiplo de 25.");
+      }
+
+
+      // Ejercicio 2.2
+      let palabra = prompt("Introduce una palabra:");
+      let primero = palabra.charAt(0);
+      let ultimo = palabra.charAt(palabra.length - 1);
+
+      if ((primero == "a" || primero == "A") && (ultimo == "a" || ultimo == "A")) {
+        console.log('Tu palabra empieza y termina por la letra "A"');
+      } else if ((primero == "a" || primero == "A") || (ultimo == "a" || ultimo == "A")) {
+        console.log('Tu palabra empieza o termina por la letra "A"');
+      } else {
+        console.log('Tu palabra ni empieza ni termina por la letra "A"');
+      }
+    </script>
+  </body>
 </html>
