@@ -29,6 +29,47 @@
 
         // AQUÍ TU RESPUESTA. HAPPY CODING!!
 
+
+        // Ejercicio 2.1
+
+        
+        const promptdata = prompt("Escribe dos números separados por una coma")
+        const inputNumeros = promptdata.split(",")
+        
+
+        let numero1 = promptdata[0]
+        let numero2 = promptdata[1]
+
+        
+
+        for (let numeros = 0; numeros <= Infinity; numeros++) {
+
+          if (numeros % 2 === 0 && numeros % 25 === 0 )
+            console.log("Ambos son par y múltiplo de 25")
+
+          if (numero1 || numero2 % 2 === 0 && numero1 || numero2 % 25 === 0)
+            console.log("Uno de ellos es par y múltiplo de 25")
+
+          if (numeros % 2 !== 0 && numeros % 25 !== 0)
+            console.log("Ninguno es par ni múltiplo de 25")
+
+            break;
+        }
+
+
+        // Ejercicio 2.2
+
+          const palabra = prompt("Escribe una palabra");
+
+            if (palabra.startsWith("a") || palabra.endsWith("a")) {
+              console.log("Empieza o termina por a")
+            }
+
+
+        
+
+
+
   </script>  
 </body>
 </html>
