@@ -17,15 +17,38 @@
         // EJERCICIO 2.1 
 
         console.log("EJERCICIO 2.1:");
-        console.log("Pide al usuario dos números e indica por console.log:")
-        console.log("Si son pares y multiplos de 25 ambos")
-        console.log("Si uno de ellos es par y multiplo de 25")
-        console.log("O Si ninguno son pares ni múltiplos de 25")
+        console.log("Pide al usuario dos números e indica por console.log:"),
+        console.log("Si son pares y multiplos de 25 ambos");
+        console.log("Si uno de ellos es par y multiplo de 25");
+        console.log("O Si ninguno son pares ni múltiplos de 25");
+
+        let num1 = prompt("introduce el primer número :");
+        let num2 = prompt("introduce el segundo número :");
+        let nums = [num1,num2];
+
+        for (let i = 0; i < nums.length; i++) {
+
+          if(nums[i] % 2 == 0 && nums[i] % 25 == 0) {
+           console.log(nums[i] + " es par y múltiplo de 25");
+           console.log("*******");
+          }
+           else if(nums[i] % 2 == 0){
+           console.log(nums[i] + " es par pero no multiplo de 25");
+           console.log("*******");
+           }
+           else if(nums[i] % 25 == 0){
+           console.log(nums[i] + " es múltiplo de 25 pero no par");
+           console.log("*******");
+           }
+           else
+           console.log("No son ni par ni múltiplo de 25");
+        }
+      
 
         // EJERCICIOS 2.2
 
-        console.log("EJERCICIO 2.2:")
-        console.log("Pidie al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")
+        // console.log("EJERCICIO 2.2:")
+        // console.log("Pidie al usuario una palabra y comprueba e imprime en consola si empieza o termina por a")
 
         // AQUÍ TU RESPUESTA. HAPPY CODING!!
 
